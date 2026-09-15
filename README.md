@@ -84,7 +84,7 @@ python build_demo_layer.py --test   # 생성 + 헤드리스 4초 시뮬: 비커 
 
 ## 5. 학교 서버(6.0.1, ROS2)에서 쓸 때
 
-* `launch_isaac_ros.sh`로 띄우면 Flow가 안 켜지므로 `exec isaacsim ...` 줄에 `--enable omni.flowusd` 추가.
+* `launch_isaac_ros.sh`에는 `--enable omni.flowusd`가 이미 들어 있으므로 그대로 쓰면 가스가 보입니다.
 * `approach_beaker.py` / `grasp_beaker.py`는 `/Beaker`를 참조합니다. 데모 씬에서는
   `/DemoBeakers/HazardBeaker`로 바꾸고, 착지 위치는 고정값이 아니라 실제 위치를 읽어 쓰세요.
 * ROS 그래프(`/FeedbackGraph`)는 기본 씬 것이 그대로 살아 있습니다.

@@ -57,7 +57,7 @@ echo "[launch] 스트리밍 ${PUBLIC_IP}  Signal ${SIGNAL_PORT} / Stream ${STREA
 echo "[launch] ROS_DOMAIN_ID=${ROS_DOMAIN_ID}  (ROS 쪽도 같은 값이어야 토픽이 보입니다)"
 echo "[launch] PID $$  — Ctrl+C 로 안 꺼지면: kill $$"
 
-exec isaacsim isaacsim.exp.full.streaming.kit --no-window \
+exec isaacsim isaacsim.exp.full.streaming.kit --no-window --enable omni.flowusd \
   --/exts/omni.kit.livestream.app/primaryStream/publicIp="$PUBLIC_IP" \
   --/exts/omni.kit.livestream.app/primaryStream/signalPort="$SIGNAL_PORT" \
   --/exts/omni.kit.livestream.app/primaryStream/streamPort="$STREAM_PORT"
