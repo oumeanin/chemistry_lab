@@ -6,3 +6,4 @@ chem_lab.zip
 __pycache__/
 *.pyc
 *.log
+captures/
